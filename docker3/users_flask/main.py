@@ -60,4 +60,4 @@ def delete_by_id(user_id):
             users.remove(user) # replace the users with new list of userts that dont have the same id as the user_id param  TODO: [user for user in users if user['id']!= user_id ] 
     
     return {"message":"Done"}
-app.run(use_reloader=True) # port 5000 host = localhost
+app.run(use_reloader=True , host='0.0.0.0') # port 5000 host = localhost
